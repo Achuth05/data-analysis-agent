@@ -1,0 +1,38 @@
+[
+  {
+    "id": "TC001",
+    "question": "What is the total sales revenue across all transactions?",
+    "category": "aggregation",
+    "expected_tool": "execute_sql"
+  },
+  {
+    "id": "TC002",
+    "question": "Which product generated the highest total sales revenue?",
+    "category": "grouping",
+    "expected_tool": "execute_sql"
+  },
+  {
+    "id": "TC003",
+    "question": "Which city generated the highest total sales revenue?",
+    "category": "grouping",
+    "expected_tool": "execute_sql"
+  },
+  {
+    "id": "TC004",
+    "question": "Which month had the highest total sales revenue?",
+    "category": "time_analysis",
+    "expected_tool": "execute_sql"
+  },
+  {
+    "id": "TC005",
+    "question": "Which product had the highest total quantity sold?",
+    "category": "aggregation",
+    "expected_tool": "execute_sql"
+  },
+  {
+    "id": "TC006",
+    "question": "What was the total sales revenue from iPhones sold in San Francisco?",
+    "category": "filtering",
+    "expected_tool": "execute_sql"
+  }
+]
