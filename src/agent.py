@@ -55,9 +55,20 @@ data_analyst = Agent(
 
 if __name__ == "__main__":
 
-    response = data_analyst.kickoff(
-        "What was the total sales revenue from iPhones sold in San Francisco?"
-    )
+    print("\nSales Data Analysis Agent")
+    print("Ask questions about the sales dataset.")
+    print("Type 'exit' to quit.\n")
 
-    print("\nFINAL ANSWER:")
-    print(response)
+    while True:
+        question = input("You: ").strip()
+
+        if question.lower() == "exit":
+            print("Goodbye!")
+            break
+
+        if not question:
+            continue
+
+        response = data_analyst.kickoff(question)
+
+        print(f"\nAgent: {response}\n")

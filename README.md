@@ -139,29 +139,34 @@ Run the agent with:
 python src/agent.py
 ```
 
-The agent can answer questions such as:
+The agent starts an interactive terminal session where you can ask questions about the sales dataset.
+
+Example:
 
 ```text
-What was the total sales revenue in January?
+Sales Data Analysis Agent
+Ask questions about the sales dataset.
+Type 'exit' to quit.
+
+You: What was the total sales revenue in January?
+
+Agent: The total sales revenue in January was $1,822,256.73.
+
+You: Which city had the highest total sales revenue?
+
+Agent: San Francisco had the highest total sales revenue.
+
+You: How many Macbook Pro Laptops were sold?
+
+Agent: 4,728 Macbook Pro Laptops were sold.
+
+You: exit
+Goodbye!
 ```
 
-```text
-Which city had the highest total sales revenue?
-```
+The agent generates the required SQL query, executes it against the SQLite database, and returns the result in a human-readable format.
 
-```text
-Which product generated the highest sales revenue?
-```
-
-```text
-How many Macbook Pro Laptops were sold?
-```
-
-```text
-What was the total sales revenue from orders placed in San Francisco during January?
-```
-
-The agent generates the appropriate SQL query, executes it against the database, and returns the result.
+Type `exit` to end the session.
 
 ## SQL Tool
 
@@ -200,6 +205,3 @@ Run them using:
 python tests/run_tests.py
 ```
 
-## License
-
-This project is intended for educational and academic use.
