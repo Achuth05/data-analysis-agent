@@ -1,38 +1,52 @@
 [
   {
-    "id": "TC001",
-    "question": "What is the total sales revenue across all transactions?",
+    "id": "TC01",
     "category": "aggregation",
-    "expected_tool": "execute_sql"
+    "question": "What was the total sales revenue in January?"
   },
   {
-    "id": "TC002",
-    "question": "Which product generated the highest total sales revenue?",
-    "category": "grouping",
-    "expected_tool": "execute_sql"
-  },
-  {
-    "id": "TC003",
-    "question": "Which city generated the highest total sales revenue?",
-    "category": "grouping",
-    "expected_tool": "execute_sql"
-  },
-  {
-    "id": "TC004",
-    "question": "Which month had the highest total sales revenue?",
-    "category": "time_analysis",
-    "expected_tool": "execute_sql"
-  },
-  {
-    "id": "TC005",
-    "question": "Which product had the highest total quantity sold?",
-    "category": "aggregation",
-    "expected_tool": "execute_sql"
-  },
-  {
-    "id": "TC006",
-    "question": "What was the total sales revenue from iPhones sold in San Francisco?",
+    "id": "TC02",
     "category": "filtering",
-    "expected_tool": "execute_sql"
+    "question": "What was the total sales revenue from iPhones?"
+  },
+  {
+    "id": "TC03",
+    "category": "grouping",
+    "question": "Which city had the highest total sales revenue?"
+  },
+  {
+    "id": "TC04",
+    "category": "ranking",
+    "question": "Which product generated the highest sales revenue?"
+  },
+  {
+    "id": "TC05",
+    "category": "time_analysis",
+    "question": "Which hour of the day had the highest total sales revenue?"
+  },
+  {
+    "id": "TC06",
+    "category": "count",
+    "question": "How many orders were placed in the dataset?"
+  },
+  {
+    "id": "TC07",
+    "category": "average",
+    "question": "What was the average sales value per order?"
+  },
+  {
+    "id": "TC08",
+    "category": "comparison",
+    "question": "Which month had the highest total sales revenue?"
+  },
+  {
+    "id": "TC09",
+    "category": "filtering",
+    "question": "How many Macbook Pro Laptops were sold?"
+  },
+  {
+    "id": "TC10",
+    "category": "multi_condition",
+    "question": "What was the total sales revenue from orders placed in San Francisco during January?"
   }
 ]
